@@ -1,0 +1,26 @@
+
+<p>customer works!</p>
+<div><input type="text" [(ngModel)] = "CurrentCustomer.name"/><br>
+    <input type="text" [(ngModel)] = "CurrentCustomer.email"/><br>
+    </div>
+Name :{{ CurrentCustomer.name}}  <br>
+Email:{{ CurrentCustomer.email}} <br>
+
+<h4>
+    Current choice is {{ myChoice }}
+  </h4>
+  
+  <div [ngSwitch]="myChoice">
+    <p *ngSwitchCase="1">First Choice</p>
+    <p *ngSwitchCase="2">Second Choice</p>
+    <p *ngSwitchCase="3">Third Choice</p>
+    <p *ngSwitchCase="2">Second Choice Again</p>
+    <p *ngSwitchDefault>Default Choice</p>
+  </div>
+  
+  <div>
+    <button (click)="nextChoice()">
+                  Next Choice
+          </button>
+  </div>
+  

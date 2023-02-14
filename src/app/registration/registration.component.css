@@ -1,0 +1,32 @@
+
+.card {
+    border: 1px solid #ccc;
+    color: rgb(170, 32, 55);
+    border: none;
+    width: 250px;
+    height:35px;
+    align-self: flex-start;
+
+  }
+  
+  .card-header {
+    background-color: lightskyblue;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;   
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  .form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+  }
+  
+
+
+  

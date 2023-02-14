@@ -1,0 +1,21 @@
+<p>bookstore works!</p>
+
+
+<table id="x1" class="y" align="center" bgcolor="skyblue"  border="1"  width="400"   height="200" cellspacing="10" cellpadding="10">
+	<caption> <h1> Past Orders</h1></caption>
+  <tr>
+    <th>Order ID</th>
+    <th>Product Name</th>
+    <th>Quantity</th>
+    <th>Bill Amount</th>
+	<th>Transaction</th>
+  </tr>
+
+  <tr *ngFor="let order of orders">
+    <td *ngIf="order.transaction === 'completed'">{{ order.orderId }}</td>
+    <td *ngIf="order.transaction === 'completed'">{{ order.productName }}</td>
+    <td *ngIf="order.transaction === 'completed'">{{ order.quantity }}</td>
+    <td *ngIf="order.transaction === 'completed'">{{ order.billAmount }}</td>
+	<td *ngIf="order.transaction === 'completed'">{{ order.transaction }}</td>
+  </tr>
+</table>
